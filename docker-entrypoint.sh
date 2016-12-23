@@ -68,4 +68,6 @@ EOPHP
 
 chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" .
 
+rm -f /var/run/apache2/apache2.pid
+
 exec "$@"
